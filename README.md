@@ -6,11 +6,9 @@ Data behind the blocking and tackling
 
 or if you prefer virtualenv...
 
-`virtualenv venv`
-
-`source venv/bin/activate`
-
-`python setup.py install`
+`virtualenv venv
+source venv/bin/activate
+python setup.py install`
 
 ## Usage
 `fifthdown --help`
