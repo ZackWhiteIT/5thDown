@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
 
 import sqlite3
-import numpy
-import os.path
+import requests
+import click
+from os import path
+from bs4 import BeautifulSoup
 
-SQL_FILE = 'fbsim.sqlite'
+DATA_DIR = path.abspath(path.join(path.dirname(__file__), '..', 'data'))
+SQL_FILE = path.join(DATA_DIR, 'fifthdown.sqlite')
 
 
 def liteDBConnect():
@@ -62,67 +65,48 @@ def addTeam(name, mascot, city, state):
         db.commit()
 
 
-def simGame(home_team_id, away_team_id):
-    ''' Drop a random score in for a game on a bell curve '''
-
-    score_mean = 17
-    score_standard_deviation = 14
-    home_score = -1
-    away_score = -1
-
-    # Generate scores from a normal distribution with limits of 0 and 63 points
-    while home_score < 0 or home_score > 63 or home_score == 1:
-        home_score = numpy.random.normal(score_mean, score_standard_deviation)
-        home_score = int(home_score)
-
-    while away_score < 0 or away_score > 63 or away_score == 1:
-        away_score = numpy.random.normal(score_mean, score_standard_deviation)
-        away_score = int(away_score)
-
-    with liteDBConnect() as db:
-        game_insert = ''' INSERT INTO game (home_id, away_id, home_score, away_score)
-                          VALUES ({}, {}, {}, {});
-                      '''.format(home_team_id, away_team_id,
-                                 home_score, away_score)
-        cursor = db.cursor()
-        cursor.execute(game_insert)
-        db.commit()
+@click.group()
+def cli():
+    ''' Data behind the blocking and tackling '''
+    pass
 
 
-def latestGameResult():
-    ''' Print the latest game result in the database '''
+@cli.command('scrape', help='Retrieve annual team data')
+@click.argument('url', required=True)
+def scrape(url):
+    ''' Scrape the specified team's statistics page '''
+    # Request the page
+    headers = {'user-agent': 'Mozilla/5.0:'}
+    page = requests.get(url, headers=headers)
+    soup = BeautifulSoup(page.content, 'lxml')
 
-    latest_id = ''' SELECT g.id, h.name, ' ', g.home_score, ' - ', g.away_score,
-                           ' ', a.name
-                    FROM game AS g
-                    JOIN team h ON g.home_id = h.id
-                    JOIN team a ON g.away_id = a.id
-                    ORDER BY g.id DESC LIMIT 1;
-                '''
-    result = None
+    # Find the team's overall statistics table
+    team_totals_table = soup.findAll('table')[5]
 
-    with liteDBConnect() as db:
-        cursor = db.cursor()
-        result = cursor.execute(latest_id).fetchone()
-        db.commit()
+    # Table setup:
+    # TEAM STATISTICS, Team, Opponent
+    # Left header, team data, opponent data
+    # Left header, team data, opponent data
+    # Left header, team data, opponent data
 
-    return result
+    # Create a pair of dictionaries (team & opponent)
+    team = {}
+    opponent = {}
+
+    # Find data
+    data_rows = team_totals_table.findAll('tr')
+    for row in data_rows:
+        data = [cell.text.strip() for cell in row.findAll('td')]
+        team[data[0]] = data[1]  # Load team data
+        opponent[data[0]] = data[2]  # Load opponent data
+
+    for key, value in team.items():
+        click.echo('{:<25} {:>15} {:>15}'.format(key, value, opponent[key]))
 
 
-def main():
+def main(agrs=None):
     ''' Simple testing '''
-
-    # Build the DB if needed
-    if not os.path.exists(SQL_FILE):
-        liteDBBuild()
-
-        # Add a few teams for testing for the new DB
-        addTeam('Adams College', 'Atoms', 'Atlanta', 'GA')
-        addTeam('Faber College', 'Mongols', 'Eugene', 'OR')
-
-    # Sim a game and return the result
-    simGame(1, 2)
-    print(''.join(str(column) for column in latestGameResult()[1:]))
+    cli()
 
 if __name__ == "__main__":
     main()

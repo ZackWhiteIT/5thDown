@@ -6,9 +6,6 @@ from setuptools import setup
 with open('README.md') as readme_file:
     readme = readme_file.read()
 
-with open('HISTORY.md') as history_file:
-    history = history_file.read()
-
 requirements = [
     'Click>=6.0',
     # TODO: put package requirements here
@@ -21,8 +18,8 @@ test_requirements = [
 setup(
     name='fifthdown',
     version='0.1.0',
-    description="An American football simulation engine",
-    long_description=readme + '\n\n' + history,
+    description="Data behind the blocking and tackling",
+    long_description=readme,
     author="Zack White",
     author_email='zackwhiteal@gmail.com',
     url='https://github.com/zackwhiteit/fifthdown',
@@ -33,7 +30,7 @@ setup(
                  'fifthdown'},
     entry_points={
         'console_scripts': [
-            'fifthdown=fifthdown.cli:main'
+            'fifthdown=fifthdown.fifthdown:main'
         ]
     },
     include_package_data=True,
