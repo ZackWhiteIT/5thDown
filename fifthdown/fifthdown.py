@@ -81,6 +81,7 @@ def scrape(url):
     soup = BeautifulSoup(page.content, 'lxml')
 
     # Find the team's overall statistics table
+    # This table index works for 2008-current data
     team_totals_table = soup.findAll('table')[5]
 
     # Table setup:

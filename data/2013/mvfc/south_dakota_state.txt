@@ -1,0 +1,52 @@
+TEAM STATISTICS                      SDSU             OPP
+SCORING                               405             330
+Points Per Game                      28.9            23.6
+FIRST DOWNS                           285             268
+Rushing                               114             117
+Passing                               137             136
+Penalty                                34              15
+RUSHING YARDAGE                      2354            2277
+Yards gained rushing                 2795            2620
+Yards lost rushing                    441             343
+Rushing Attempts                      539             528
+Average Per Rush                      4.4             4.3
+Average Per Game                     40.9            57.1
+TDs Rushing                            28              23
+PASSING YARDAGE                      3031            3073
+Comp-Att-Int                    243-413-8      237-412-22
+Average Per Pass                      7.3             7.5
+Average Per Catch                    12.5            13.0
+TDs Passing                            20              18
+TOTAL OFFENSE                        5385            5350
+Total Plays                           952             940
+Average Per Play                      5.7             5.7
+KICK RETURNS: #-Yards              38-739          44-906
+PUNT RETURNS: #-Yards              33-337          19-110
+INT RETURNS: #-Yards               22-407            8-75
+KICK RETURN AVERAGE                  19.4            20.6
+PUNT RETURN AVERAGE                  10.2             5.8
+INT RETURN AVERAGE                   18.5             9.4
+FUMBLES-LOST                        17-10           20-11
+PENALTIES-Yards                    61-573          85-799
+PUNTS-Yards                       67-2699         71-2804
+Average Per Punt                     40.3            39.5
+Net punt average                     35.1            33.6
+KICKOFFS-Yards                    77-4320         64-3780
+Average Per Kick                     56.1            59.1
+Net kick average                     36.5            39.3
+TIME OF POSSESSION/Game             32:06           27:54
+3RD-DOWN Conversions               83/198          81/192
+3rd-Down Pct                          42%             42%
+4TH-DOWN Conversions                 8/20            6/17
+4th-Down Pct                          40%             35%
+SACKS BY-Yards                     33-196          47-294
+MISC YARDS                              7              15
+TOUCHDOWNS SCORED                      53              43
+FIELD GOALS-ATTEMPTS                12-21           11-16
+ON-SIDE KICKS                         0-0             1-1
+RED-ZONE SCORES               (43-54) 80%     (39-53) 74%
+RED-ZONE TOUCHDOWNS           (33-54) 61%     (31-53) 58%
+PAT-ATTEMPTS                  (49-50) 98%     (35-40) 88%
+ATTENDANCE                          64162          154218
+Games/Avg Per Game                6/10694         8/19277
+Neutral Site Games                                    0/0
