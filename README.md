@@ -1,5 +1,9 @@
-# fifthdown
+# Fifthdown
 Data behind the blocking and tackling
+
+## About the Project
+
+Fifthdown is a data analytics project to research Division I football programs. The hope is to identify trends and key metrics within college football.
 
 ## Installation
 `python setup.py install`
