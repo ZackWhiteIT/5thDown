@@ -1,0 +1,52 @@
+TEAM STATISTICS                       MUR             OPP
+SCORING                               431             455
+Points Per Game                      39.2            41.4
+FIRST DOWNS                           298             300
+Rushing                                91             124
+Passing                               191             159
+Penalty                                16              17
+RUSHING YARDAGE                      1490            2200
+Yards gained rushing                 1823            2416
+Yards lost rushing                    333             216
+Rushing Attempts                      377             487
+Average Per Rush                      4.0             4.5
+Average Per Game                     51.7            57.7
+TDs Rushing                            23              26
+PASSING YARDAGE                      3838            3443
+Comp-Att-Int                   370-533-11       275-426-6
+Average Per Pass                      7.2             8.1
+Average Per Catch                    10.4            12.5
+TDs Passing                            30              32
+TOTAL OFFENSE                        5328            5643
+Total Plays                           910             913
+Average Per Play                      5.9             6.2
+KICK RETURNS: #-Yards             51-1120         69-1329
+PUNT RETURNS: #-Yards              23-306          16-200
+INT RETURNS: #-Yards                 6-51          11-102
+KICK RETURN AVERAGE                  22.0            19.3
+PUNT RETURN AVERAGE                  13.3            12.5
+INT RETURN AVERAGE                    8.5             9.3
+FUMBLES-LOST                         17-8            21-9
+PENALTIES-Yards                    67-569          75-635
+PUNTS-Yards                       51-2077         55-2226
+Average Per Punt                     40.7            40.5
+Net punt average                     35.2            33.5
+KICKOFFS-Yards                    78-4432         79-4536
+Average Per Kick                     56.8            57.4
+Net kick average                     37.9            36.0
+TIME OF POSSESSION/Game             26:15           33:44
+3RD-DOWN Conversions               69/167          85/181
+3rd-Down Pct                          41%             47%
+4TH-DOWN Conversions                15/27           11/20
+4th-Down Pct                          56%             55%
+SACKS BY-Yards                      13-96          30-203
+MISC YARDS                             13               0
+TOUCHDOWNS SCORED                      57              62
+FIELD GOALS-ATTEMPTS                11-14            7-13
+ON-SIDE KICKS                         0-1             0-0
+RED-ZONE SCORES               (52-63) 83%     (46-51) 90%
+RED-ZONE TOUCHDOWNS           (42-63) 67%     (40-51) 78%
+PAT-ATTEMPTS                  (54-55) 98%     (56-59) 95%
+ATTENDANCE                          34650          115193
+Games/Avg Per Game                 5/6930         6/19199
+Neutral Site Games                                    0/0

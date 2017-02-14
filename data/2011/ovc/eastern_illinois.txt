@@ -1,0 +1,49 @@
+TEAM STATISTICS                       EIU             OPP
+SCORING                               255             345
+Points Per Game                      23.2            31.4
+FIRST DOWNS                           190             230
+Rushing                                58             134
+Passing                               125              85
+Penalty                                 7              11
+RUSHING YARDAGE                       941            2640
+Yards gained rushing                 1269            2868
+Yards lost rushing                    328             228
+Rushing Attempts                      346             506
+Average Per Rush                      2.7             5.2
+Average Per Game                     39.9            45.6
+TDs Rushing                            13              32
+PASSING YARDAGE                      2644            1809
+Comp-Att-Int                   217-353-14       172-267-4
+Average Per Pass                      7.5             6.8
+Average Per Catch                    12.2            10.5
+TDs Passing                            20              12
+TOTAL OFFENSE                        3585            4449
+Total Plays                           699             773
+Average Per Play                      5.1             5.8
+KICK RETURNS: #-Yards             53-1222          47-934
+PUNT RETURNS: #-Yards               10-28          19-144
+INT RETURNS: #-Yards                 4-35          14-124
+KICK RETURN AVERAGE                  23.1            19.9
+PUNT RETURN AVERAGE                   2.8             7.6
+INT RETURN AVERAGE                    8.8             8.9
+FUMBLES-LOST                         15-9            12-5
+PENALTIES-Yards                    53-439          59-502
+PUNTS-Yards                       48-1809         50-1793
+Average Per Punt                     37.7            35.9
+Net punt average                     33.4            31.3
+TIME OF POSSESSION/Game             28:57           30:52
+3RD-DOWN Conversions               56/146          63/148
+3rd-Down Pct                          38%             43%
+4TH-DOWN Conversions                 9/21           11/16
+4th-Down Pct                          43%             69%
+SACKS BY-Yards                     14-106          28-168
+MISC YARDS                              3             -10
+TOUCHDOWNS SCORED                      34              45
+FIELD GOALS-ATTEMPTS                  7-9           10-18
+ON-SIDE KICKS                         0-1             0-1
+RED-ZONE SCORES               (29-33) 88%     (44-50) 88%
+RED-ZONE TOUCHDOWNS           (22-33) 67%     (38-50) 76%
+PAT-ATTEMPTS                  (28-30) 93%     (41-43) 95%
+ATTENDANCE                          37937           71189
+Games/Avg Per Game                 5/7587         6/11865
+Neutral Site Games                                    0/0

@@ -1,0 +1,53 @@
+TEAM STATISTICS                       TSU             OPP
+SCORING                               246             281
+Points Per Game                      24.6            28.1
+Points Off Turnovers                   14              36
+FIRST DOWNS                           174             191
+Rushing                                53              88
+Passing                                92              86
+Penalty                                29              17
+RUSHING YARDAGE                      1234            1591
+Yards gained rushing                 1460            1853
+Yards lost rushing                    226             262
+Rushing Attempts                      352             372
+Average Per Rush                      3.5             4.3
+Average Per Game                     72.3            74.0
+TDs Rushing                            13              17
+PASSING YARDAGE                      2092            2088
+Comp-Att-Int                   172-306-12       185-316-6
+Average Per Pass                      6.8             6.6
+Average Per Catch                    12.2            11.3
+TDs Passing                            19              17
+TOTAL OFFENSE                        3326            3679
+Total Plays                           658             688
+Average Per Play                      5.1             5.3
+KICK RETURNS: #-Yards              37-617          27-610
+PUNT RETURNS: #-Yards              17-148          20-209
+INT RETURNS: #-Yards                6-179          12-180
+KICK RETURN AVERAGE                  16.7            22.6
+PUNT RETURN AVERAGE                   8.7            10.4
+INT RETURN AVERAGE                   29.8            15.0
+FUMBLES-LOST                         11-3            15-9
+PENALTIES-Yards                    86-723          73-740
+PUNTS-Yards                       61-2279         54-1994
+Average Per Punt                     37.4            36.9
+Net punt average                     31.6            32.7
+KICKOFFS-Yards                    47-2692         52-2919
+Average Per Kick                     57.3            56.1
+Net kick average                     36.9            39.9
+TIME OF POSSESSION/Game             32:25           27:35
+3RD-DOWN Conversions               58/150          57/145
+3rd-Down Pct                          39%             39%
+4TH-DOWN Conversions                 5/10            9/16
+4th-Down Pct                          50%             56%
+SACKS BY-Yards                     21-145           17-97
+MISC YARDS                             -7               5
+TOUCHDOWNS SCORED                      32              36
+FIELD GOALS-ATTEMPTS                 8-14            9-13
+ON-SIDE KICKS                         1-2             1-1
+RED-ZONE SCORES               (20-28) 71%     (32-41) 78%
+RED-ZONE TOUCHDOWNS           (17-28) 61%     (24-41) 59%
+PAT-ATTEMPTS                  (26-29) 90%     (30-32) 94%
+ATTENDANCE                          58481           61880
+Games/Avg Per Game                4/14620         5/12376
+Neutral Site Games                                1/48385
