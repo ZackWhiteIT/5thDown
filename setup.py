@@ -2,18 +2,25 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup
+from pip.req import parse_requirements
+from pip.download import PipSession
+import os
+
+
+def read_requirements():
+    '''parses requirements from requirements.txt'''
+    __location__ = os.path.dirname(os.path.realpath(__file__))
+    reqs_path = os.path.join(__location__, 'requirements.txt')
+    install_reqs = parse_requirements(reqs_path, session=PipSession())
+    reqs = [str(ir.req) for ir in install_reqs]
+    return reqs
 
 with open('README.md') as readme_file:
     readme = readme_file.read()
 
-requirements = [
-    'Click>=6.0',
-    # TODO: put package requirements here
-]
+requirements = read_requirements()
 
-test_requirements = [
-    # TODO: put package test requirements here
-]
+test_requirements = requirements
 
 setup(
     name='fifthdown',

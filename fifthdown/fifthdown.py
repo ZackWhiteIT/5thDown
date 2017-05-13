@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 
-import sqlite3
+import records
 import requests
 import click
+import csv
 from os import path
+from os import makedirs
 from bs4 import BeautifulSoup
 
 DATA_DIR = path.abspath(path.join(path.dirname(__file__), '..', 'data'))
@@ -71,8 +73,31 @@ def cli():
     pass
 
 
+@cli.command('load', help='Load CSV into database')
+@click.argument('file', type=click.Path(exists=True), required=True)
+def load(file):
+    ''' Load CSV into database'''
+    click.echo(click.format_filename(file))
+
+
+@cli.command('scrapemega', help='Retrieve annual team data for multiple teams from CSV file containing URL/export path pair')
+@click.argument('file', type=click.Path(exists=True), required=True)
+def scrape_mega(file):
+    ''' Retrieve annual team data for multiple teams from CSV file containing URL/export path pair '''
+    with open(file, 'r') as f:
+        reader = csv.reader(f)
+        for row in reader:
+            url = row[0]
+            export_path = path.dirname(path.abspath(row[1]))
+            export_file = path.basename(path.abspath(row[1]))
+            click.echo(export_path)
+            click.echo(export_file)
+            if path.exists(export_path) is False:
+                makedirs(export_path)
+
+
 @cli.command('scrape', help='Retrieve annual team data')
-@click.argument('url', required=True)
+@click.argument('url', required=False)
 def scrape(url):
     ''' Scrape the specified team's statistics page '''
     # Request the page
@@ -104,10 +129,13 @@ def scrape(url):
     for key, value in team.items():
         click.echo('{:<25} {:>15} {:>15}'.format(key, value, opponent[key]))
 
+    return team
+
 
 def main(agrs=None):
     ''' Simple testing '''
     cli()
+
 
 if __name__ == "__main__":
     main()
