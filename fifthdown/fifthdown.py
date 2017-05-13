@@ -8,64 +8,15 @@ from os import path
 from os import makedirs
 from bs4 import BeautifulSoup
 
-DATA_DIR = path.abspath(path.join(path.dirname(__file__), '..', 'data'))
-SQL_FILE = path.join(DATA_DIR, 'fifthdown.sqlite')
+DATA_DIR = path.abspath(path.join(path.dirname(__file__), 'data'))
+DB_FILE = path.join(DATA_DIR, 'fifthdown.db')
 
-
-def liteDBConnect():
-    ''' Connects to the database '''
-
-    # Currently using SQLite3; Moving to Postgres eventually...
-
-    # If the file doesn't exist, it's created automatically by the SQLite3
-    # library.
-    return sqlite3.connect(SQL_FILE)
-
-
-def liteDBBuild():
-    ''' Build the SQLite3 database for the sim engine '''
-
-    # Build team table
-    # id (int) primary key, name (varchar30), mascot (varchar30), city
-    # (varchar30), state (char2)
-
-    team_table = ''' CREATE TABLE team
-                     (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT,
-                     mascot TEXT, city TEXT, state TEXT);
-                 '''
-
-    with liteDBConnect() as db:
-        cursor = db.cursor()
-        cursor.execute(team_table)
-        db.commit()
-
-    # Build game table
-    # id (int) primary key, home_id (int), away_id (int), home_score (int),
-    # away_score (int)
-
-    game_table = ''' CREATE TABLE game
-                     (id INTEGER PRIMARY KEY AUTOINCREMENT, home_id INTEGER,
-                     away_id INTEGER, home_score INTEGER, away_score INTEGER);
-                 '''
-
-    with liteDBConnect() as db:
-        cursor = db.cursor()
-        cursor.execute(game_table)
-        db.commit()
-
-
-def addTeam(name, mascot, city, state):
-    ''' Add a team to the database '''
-
-    add_team = ''' INSERT INTO team (name, mascot, city, state)
-                   VALUES ('{}', '{}', '{}', '{}');
-               '''.format(name, mascot, city, state)
-
-    with liteDBConnect() as db:
-        cursor = db.cursor()
-        cursor.execute(add_team)
-        db.commit()
-
+def build_database():
+    ''' Build the SQLite3 Database '''
+    db = records.Database('sqlite:///' + DB_FILE)
+    DB_BUILD_COMMAND = path.abspath(path.join(path.dirname(__file__), 'sql', 'create_db.sql'))
+    db.query_file(DB_BUILD_COMMAND)
+    click.echo('Fifth Down database created at ' + DB_FILE)
 
 @click.group()
 def cli():
@@ -109,7 +60,7 @@ def scrape_mega(ctx, file):
                     for data in team_data:
                         writer.writerow(data)
             else:
-                click.echo(csv_export + ' already exists')
+                click.echo('Data file ' + csv_export + ' already exists')
 
 
 @cli.command('scrape', help='Retrieve annual team data')
@@ -153,6 +104,10 @@ def scrape(url):
 
 def main(agrs=None):
     ''' Simple testing '''
+    if path.isfile(DB_FILE) is False:
+        build_database()
+    else:
+        click.echo('Fifth Down database ' + DB_FILE + ' already exists')
     cli()
 
 

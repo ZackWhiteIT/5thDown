@@ -30,11 +30,7 @@ setup(
     author="Zack White",
     author_email='zackwhiteal@gmail.com',
     url='https://github.com/zackwhiteit/fifthdown',
-    packages=[
-        'fifthdown',
-    ],
-    package_dir={'fifthdown':
-                 'fifthdown'},
+    packages=['fifthdown'],
     entry_points={
         'console_scripts': [
             'fifthdown=fifthdown.fifthdown:main'
@@ -42,7 +38,7 @@ setup(
     },
     include_package_data=True,
     install_requires=requirements,
-    license="MIT license",
+    license='MIT license',
     zip_safe=False,
     keywords='fifthdown',
     classifiers=[
