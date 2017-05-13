@@ -82,22 +82,38 @@ def load(file):
 
 @cli.command('scrapemega', help='Retrieve annual team data for multiple teams from CSV file containing URL/export path pair')
 @click.argument('file', type=click.Path(exists=True), required=True)
-def scrape_mega(file):
+@click.pass_context
+def scrape_mega(ctx, file):
     ''' Retrieve annual team data for multiple teams from CSV file containing URL/export path pair '''
+    # Parse CSV file for URL/export path pairs
     with open(file, 'r') as f:
         reader = csv.reader(f)
         for row in reader:
             url = row[0]
             export_path = path.dirname(path.abspath(row[1]))
             export_file = path.basename(path.abspath(row[1]))
-            click.echo(export_path)
-            click.echo(export_file)
+
+            # Create the path if it does not exist
             if path.exists(export_path) is False:
                 makedirs(export_path)
+                click.echo(export_path + " created")
+
+            csv_export = path.join(export_path, export_file)
+
+            # Don't scrape if the file already exists
+            if path.exists(csv_export) is False:
+                # Scrape
+                team_data = ctx.invoke(scrape, url=url)
+                with open(csv_export, 'w') as output:
+                    writer = csv.writer(output)
+                    for data in team_data:
+                        writer.writerow(data)
+            else:
+                click.echo(csv_export + ' already exists')
 
 
 @cli.command('scrape', help='Retrieve annual team data')
-@click.argument('url', required=False)
+@click.argument('url', required=True)
 def scrape(url):
     ''' Scrape the specified team's statistics page '''
     # Request the page
@@ -126,10 +142,13 @@ def scrape(url):
         team[data[0]] = data[1]  # Load team data
         opponent[data[0]] = data[2]  # Load opponent data
 
+    results = []
+
     for key, value in team.items():
         click.echo('{:<25} {:>15} {:>15}'.format(key, value, opponent[key]))
+        results.append([key, value, opponent[key]])
 
-    return team
+    return results
 
 
 def main(agrs=None):

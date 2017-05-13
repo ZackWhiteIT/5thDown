@@ -1,0 +1,52 @@
+TEAM STATISTICS,JSU
+SCORING,322
+Points Per Game,29.3
+FIRST DOWNS,244
+Rushing,113
+Passing,116
+Penalty,15
+RUSHING YARDAGE,2101
+Yards gained rushing,2359
+Yards lost rushing,258
+Rushing Attempts,486
+Average Per Rush,4.3
+Average Per Game,54.0
+TDs Rushing,21
+PASSING YARDAGE,2445
+Comp-Att-Int,171-307-10
+Average Per Pass,8.0
+Average Per Catch,14.3
+TDs Passing,20
+TOTAL OFFENSE,4546
+Total Plays,793
+Average Per Play,5.7
+KICK RETURNS: #-Yards,43-917
+PUNT RETURNS: #-Yards,17-164
+INT RETURNS: #-Yards,9-66
+KICK RETURN AVERAGE,21.3
+PUNT RETURN AVERAGE,9.6
+INT RETURN AVERAGE,7.3
+FUMBLES-LOST,21-9
+PENALTIES-Yards,69-594
+PUNTS-Yards,53-2053
+Average Per Punt,38.7
+Net punt average,35.8
+KICKOFFS-Yards,61-3662
+Average Per Kick,60.0
+Net kick average,37.9
+TIME OF POSSESSION/Game,31:38
+3RD-DOWN Conversions,78/164
+3rd-Down Pct,48%
+4TH-DOWN Conversions,2/6
+4th-Down Pct,33%
+SACKS BY-Yards,15-85
+MISC YARDS,23
+TOUCHDOWNS SCORED,42
+FIELD GOALS-ATTEMPTS,10-19
+ON-SIDE KICKS,0-1
+RED-ZONE SCORES,(38-51) 75%
+RED-ZONE TOUCHDOWNS,(30-51) 59%
+PAT-ATTEMPTS,(38-39) 97%
+ATTENDANCE,80032
+Games/Avg Per Game,5/16006
+Neutral Site Games,

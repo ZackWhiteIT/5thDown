@@ -1,0 +1,49 @@
+TEAM STATISTICS,APSU
+SCORING,208
+Points Per Game,18.9
+FIRST DOWNS,162
+Rushing,83
+Passing,63
+Penalty,16
+RUSHING YARDAGE,1838
+Yards gained rushing,2048
+Yards lost rushing,210
+Rushing Attempts,407
+Average Per Rush,4.5
+Average Per Game,57.2
+TDs Rushing,13
+PASSING YARDAGE,1283
+Comp-Att-Int,127-252-14
+Average Per Pass,5.1
+Average Per Catch,10.1
+TDs Passing,9
+TOTAL OFFENSE,3121
+Total Plays,659
+Average Per Play,4.7
+KICK RETURNS: #-Yards,62-1274
+PUNT RETURNS: #-Yards,9-93
+INT RETURNS: #-Yards,8-98
+KICK RETURN AVERAGE,20.5
+PUNT RETURN AVERAGE,10.3
+INT RETURN AVERAGE,12.2
+FUMBLES-LOST,20-10
+PENALTIES-Yards,78-629
+PUNTS-Yards,53-2173
+Average Per Punt,41.0
+Net punt average,30.2
+TIME OF POSSESSION/Game,28:04
+3RD-DOWN Conversions,53/146
+3rd-Down Pct,36%
+4TH-DOWN Conversions,8/20
+4th-Down Pct,40%
+SACKS BY-Yards,10-57
+MISC YARDS,0
+TOUCHDOWNS SCORED,25
+FIELD GOALS-ATTEMPTS,12-18
+ON-SIDE KICKS,0-1
+RED-ZONE SCORES,(20-27) 74%
+RED-ZONE TOUCHDOWNS,(12-27) 44%
+PAT-ATTEMPTS,(22-23) 96%
+ATTENDANCE,22255
+Games/Avg Per Game,5/4451
+Neutral Site Games,

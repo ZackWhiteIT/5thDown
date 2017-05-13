@@ -1,0 +1,49 @@
+TEAM STATISTICS,EIU
+SCORING,255
+Points Per Game,23.2
+FIRST DOWNS,190
+Rushing,58
+Passing,125
+Penalty,7
+RUSHING YARDAGE,941
+Yards gained rushing,1269
+Yards lost rushing,328
+Rushing Attempts,346
+Average Per Rush,2.7
+Average Per Game,39.9
+TDs Rushing,13
+PASSING YARDAGE,2644
+Comp-Att-Int,217-353-14
+Average Per Pass,7.5
+Average Per Catch,12.2
+TDs Passing,20
+TOTAL OFFENSE,3585
+Total Plays,699
+Average Per Play,5.1
+KICK RETURNS: #-Yards,53-1222
+PUNT RETURNS: #-Yards,10-28
+INT RETURNS: #-Yards,4-35
+KICK RETURN AVERAGE,23.1
+PUNT RETURN AVERAGE,2.8
+INT RETURN AVERAGE,8.8
+FUMBLES-LOST,15-9
+PENALTIES-Yards,53-439
+PUNTS-Yards,48-1809
+Average Per Punt,37.7
+Net punt average,33.4
+TIME OF POSSESSION/Game,28:57
+3RD-DOWN Conversions,56/146
+3rd-Down Pct,38%
+4TH-DOWN Conversions,9/21
+4th-Down Pct,43%
+SACKS BY-Yards,14-106
+MISC YARDS,3
+TOUCHDOWNS SCORED,34
+FIELD GOALS-ATTEMPTS,7-9
+ON-SIDE KICKS,0-1
+RED-ZONE SCORES,(29-33) 88%
+RED-ZONE TOUCHDOWNS,(22-33) 67%
+PAT-ATTEMPTS,(28-30) 93%
+ATTENDANCE,37937
+Games/Avg Per Game,5/7587
+Neutral Site Games,

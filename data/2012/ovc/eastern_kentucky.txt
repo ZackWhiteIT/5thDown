@@ -1,0 +1,52 @@
+TEAM STATISTICS,EKU
+SCORING,344
+Points Per Game,31.3
+FIRST DOWNS,247
+Rushing,136
+Passing,105
+Penalty,6
+RUSHING YARDAGE,2263
+Yards gained rushing,2509
+Yards lost rushing,246
+Rushing Attempts,549
+Average Per Rush,4.1
+Average Per Game,51.4
+TDs Rushing,25
+PASSING YARDAGE,2421
+Comp-Att-Int,155-269-6
+Average Per Pass,9.0
+Average Per Catch,15.6
+TDs Passing,19
+TOTAL OFFENSE,4684
+Total Plays,818
+Average Per Play,5.7
+KICK RETURNS: #-Yards,35-821
+PUNT RETURNS: #-Yards,13-56
+INT RETURNS: #-Yards,16-317
+KICK RETURN AVERAGE,23.5
+PUNT RETURN AVERAGE,4.3
+INT RETURN AVERAGE,19.8
+FUMBLES-LOST,16-3
+PENALTIES-Yards,70-565
+PUNTS-Yards,47-1779
+Average Per Punt,37.9
+Net punt average,34.3
+KICKOFFS-Yards,65-3614
+Average Per Kick,55.6
+Net kick average,35.9
+TIME OF POSSESSION/Game,34:15
+3RD-DOWN Conversions,91/177
+3rd-Down Pct,51%
+4TH-DOWN Conversions,10/15
+4th-Down Pct,67%
+SACKS BY-Yards,24-162
+MISC YARDS,0
+TOUCHDOWNS SCORED,46
+FIELD GOALS-ATTEMPTS,8-17
+ON-SIDE KICKS,0-0
+RED-ZONE SCORES,(33-41) 80%
+RED-ZONE TOUCHDOWNS,(26-41) 63%
+PAT-ATTEMPTS,(42-45) 93%
+ATTENDANCE,49000
+Games/Avg Per Game,5/9800
+Neutral Site Games,

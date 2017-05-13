@@ -1,0 +1,52 @@
+TEAM STATISTICS,TSU
+SCORING,317
+Points Per Game,28.8
+FIRST DOWNS,243
+Rushing,104
+Passing,121
+Penalty,18
+RUSHING YARDAGE,1933
+Yards gained rushing,2135
+Yards lost rushing,202
+Rushing Attempts,454
+Average Per Rush,4.3
+Average Per Game,87.4
+TDs Rushing,19
+PASSING YARDAGE,2755
+Comp-Att-Int,216-364-10
+Average Per Pass,7.6
+Average Per Catch,12.8
+TDs Passing,18
+TOTAL OFFENSE,4688
+Total Plays,818
+Average Per Play,5.7
+KICK RETURNS: #-Yards,40-764
+PUNT RETURNS: #-Yards,19-148
+INT RETURNS: #-Yards,14-116
+KICK RETURN AVERAGE,19.1
+PUNT RETURN AVERAGE,7.8
+INT RETURN AVERAGE,8.3
+FUMBLES-LOST,17-9
+PENALTIES-Yards,112-961
+PUNTS-Yards,53-1978
+Average Per Punt,37.3
+Net punt average,32.3
+KICKOFFS-Yards,62-3188
+Average Per Kick,51.4
+Net kick average,36.6
+TIME OF POSSESSION/Game,32:02
+3RD-DOWN Conversions,76/175
+3rd-Down Pct,43%
+4TH-DOWN Conversions,10/16
+4th-Down Pct,62%
+SACKS BY-Yards,21-142
+MISC YARDS,174
+TOUCHDOWNS SCORED,39
+FIELD GOALS-ATTEMPTS,16-20
+ON-SIDE KICKS,0-1
+RED-ZONE SCORES,(40-48) 83%
+RED-ZONE TOUCHDOWNS,(30-48) 63%
+PAT-ATTEMPTS,(33-36) 92%
+ATTENDANCE,82932
+Games/Avg Per Game,5/16586
+Neutral Site Games,
