@@ -3,3 +3,4 @@ include requirements.txt
 include LICENSE
 recursive-include fifthdown/data *
 recursive-include fifthdown/sql *
+recursive-include fifthdown/scrape *
