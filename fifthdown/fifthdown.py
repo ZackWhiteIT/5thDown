@@ -49,17 +49,16 @@ def load_mega(dir):
             offense_dict = {}
             defense_dict = {}
             with open(file_path, 'r') as f:
-                click.echo('Processing data file ' + file_path + '...')
                 reader = csv.reader(f)
                 reader_data = [row for row in reader]
                 if len(reader_data) > 0:
                     # Parse offense
-                    offense_dict['team'] = reader_data[0][1]
+                    offense_dict['team'] = '\'{}\''.format(reader_data[0][1])
                     offense_dict['year'] = path.dirname(
                         file_path).split('/')[-2]
                     if int(offense_dict['year']) < 2012:
                         ''' 2008-2012 data map for SideArm Sports '''
-                        offense_dict['off_def'] = 'offense'
+                        offense_dict['off_def'] = '\'offense\''
                         offense_dict['points'] = reader_data[1][1]
                         offense_dict['points_per_game'] = reader_data[2][1]
                         offense_dict['first_downs'] = reader_data[3][1]
@@ -161,13 +160,12 @@ def load_mega(dir):
                         offense_dict['kickoff_yards_per_attempt'] = '0'
                         offense_dict['kickoff_net_yards_per_attempt'] = '0'
                         offense_dict['points_off_turnovers'] = '0'
-                        click.echo(offense_dict)
 
                         # Parse defense
-                        defense_dict['team'] = reader_data[0][1]
+                        defense_dict['team'] = '\'{}\''.format(reader_data[0][1])
                         defense_dict['year'] = path.dirname(
                             file_path).split('/')[-2]
-                        defense_dict['off_def'] = 'defense'
+                        defense_dict['off_def'] = '\'defense\''
                         defense_dict['points'] = reader_data[1][2]
                         defense_dict['points_per_game'] = reader_data[2][2]
                         defense_dict['first_downs'] = reader_data[3][2]
@@ -269,11 +267,11 @@ def load_mega(dir):
                         defense_dict['kickoff_yards_per_attempt'] = '0'
                         defense_dict['kickoff_net_yards_per_attempt'] = '0'
                         defense_dict['points_off_turnovers'] = '0'
-                        click.echo(defense_dict)
+
                     elif int(offense_dict['year']) > 2010 and int(offense_dict['year']) < 2014:
                         ''' Data map for SideArm Sports 2011-2013 '''
                         ''' Added kickoff data '''
-                        offense_dict['off_def'] = 'offense'
+                        offense_dict['off_def'] = '\'offense\''
                         offense_dict['points'] = reader_data[1][1]
                         offense_dict['points_per_game'] = reader_data[2][1]
                         offense_dict['first_downs'] = reader_data[3][1]
@@ -376,13 +374,13 @@ def load_mega(dir):
                             offense_dict['games_neutral'] = '0'
                             offense_dict['games_neutral_attendance_per_game'] = '0'
                         offense_dict['points_off_turnovers'] = '0'
-                        click.echo(offense_dict)
+
 
                         # Parse defense
-                        defense_dict['team'] = reader_data[0][1]
+                        defense_dict['team'] = '\'{}\''.format(reader_data[0][1])
                         defense_dict['year'] = path.dirname(
                             file_path).split('/')[-2]
-                        defense_dict['off_def'] = 'defense'
+                        defense_dict['off_def'] = '\'defense\''
                         defense_dict['points'] = reader_data[1][2]
                         defense_dict['points_per_game'] = reader_data[2][2]
                         defense_dict['first_downs'] = reader_data[3][2]
@@ -485,11 +483,11 @@ def load_mega(dir):
                             defense_dict['games_neutral'] = '0'
                             defense_dict['games_neutral_attendance_per_game'] = '0'
                         defense_dict['points_off_turnovers'] = '0'
-                        click.echo(defense_dict)
+
                     else:
                         ''' Data map for SideArm Sports after 2013 '''
                         ''' Added points off turnovers '''
-                        offense_dict['off_def'] = 'offense'
+                        offense_dict['off_def'] = '\'offense\''
                         offense_dict['points'] = reader_data[1][1]
                         offense_dict['points_per_game'] = reader_data[2][1]
                         offense_dict['points_off_turnovers'] = reader_data[3][1]
@@ -592,13 +590,13 @@ def load_mega(dir):
                         else:
                             offense_dict['games_neutral'] = '0'
                             offense_dict['games_neutral_attendance_per_game'] = '0'
-                        click.echo(offense_dict)
+
 
                         # Parse defense
-                        defense_dict['team'] = reader_data[0][1]
+                        defense_dict['team'] = '\'{}\''.format(reader_data[0][1])
                         defense_dict['year'] = path.dirname(
                             file_path).split('/')[-2]
-                        defense_dict['off_def'] = 'defense'
+                        defense_dict['off_def'] = '\'defense\''
                         defense_dict['points'] = reader_data[1][2]
                         defense_dict['points_per_game'] = reader_data[2][2]
                         defense_dict['points_off_turnovers'] = reader_data[3][2]
@@ -701,11 +699,22 @@ def load_mega(dir):
                         else:
                             defense_dict['games_neutral'] = '0'
                             defense_dict['games_neutral_attendance_per_game'] = '0'
-                        click.echo(defense_dict)
+
 
                     click.echo('Data file ' + file_path + ' processed')
                 else:
                     click.echo('Data file ' + file_path + ' skipped')
+
+                # Insert the data into the database
+                offense_insert = 'INSERT INTO stats ({}) VALUES ({});'.format(', '.join(offense_dict.keys()), ', '.join(offense_dict.values()))
+                defense_insert = 'INSERT INTO stats ({}) VALUES ({});'.format(', '.join(defense_dict.keys()), ', '.join(defense_dict.values()))
+
+                db = records.Database('sqlite:///' + DB_FILE)
+                db.query(offense_insert)
+                db.query(defense_insert)
+
+                click.echo('Data file {} imported into database'.format(file_path))
+
 
 
 @cli.command('scrapemega', help='Retrieve annual team data for multiple teams from CSV file containing URL/export path pair')
