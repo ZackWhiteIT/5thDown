@@ -6,7 +6,7 @@ flake8==2.6.0
 tox==2.3.1
 coverage==4.1
 PyYAML==3.12
-requests==2.14.2
+requests==2.21.0
 lxml==3.7.2
 bs4==0.0.1
 beautifulsoup4==4.6.0
