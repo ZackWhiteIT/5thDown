@@ -5,6 +5,12 @@ Data behind the blocking and tackling
 
 Fifthdown is a data analytics project to research Division I football programs. The hope is to identify trends and key metrics within college football.
 
+### Key Features
+
+- Data scraper
+- [Elo ratings](https://www.wikiwand.com/en/Elo_rating_system)
+- Visualizations
+
 ## Installation
 `python setup.py install`
 
