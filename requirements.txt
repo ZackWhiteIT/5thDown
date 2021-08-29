@@ -13,3 +13,4 @@ beautifulsoup4==4.6.0
 pytest==2.9.2
 click==6.7
 records==0.5.0
+seaborn
