@@ -8,7 +8,7 @@ Fifthdown is a data analytics project to research Division I football programs. 
 ### Key Features
 
 - Data scraper
-- [Elo ratings](https://www.wikiwand.com/en/Elo_rating_system)
+- [Elo ratings](https://en.wikipedia.org/wiki/Elo_rating_system)
 - Visualizations
 
 ### A Little More About Elo
