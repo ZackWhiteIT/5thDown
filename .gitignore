@@ -90,3 +90,9 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# VS Code
+.vscode/
+
+# Secrets
+secret*.y*ml
